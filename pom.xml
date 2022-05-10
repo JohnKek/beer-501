@@ -15,26 +15,20 @@
     <description>BeerFactory</description>
     <properties>
         <java.version>11</java.version>
-    </properties>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+</properties>
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-jpa</artifactId>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/org.webjars.npm/vue -->
-        <dependency>
-            <groupId>org.webjars.npm</groupId>
-            <artifactId>vue</artifactId>
-            <version>3.2.22</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/org.webjars/vue -->
-        <dependency>
-            <groupId>org.webjars</groupId>
-            <artifactId>vue</artifactId>
-            <version>2.6.14</version>
-        </dependency>
 
 
         <dependency>
@@ -76,11 +70,6 @@
             <version>2.16.0</version>
         </dependency>
 
-        <dependency>
-            <groupId>org.webjars.npm</groupId>
-            <artifactId>axios</artifactId>
-            <version>0.21.1</version>
-        </dependency>
     </dependencies>
 
     <build>
